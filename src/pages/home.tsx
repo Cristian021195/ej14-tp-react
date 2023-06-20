@@ -22,7 +22,7 @@ export function Home(){
                                 <p><b>Ingredientes: </b></p>
                                 <ul>
                                     {r.insumos.map((ing:any, ingi:number)=>{
-                                        return (<li key={ingi}>{ing.producto} - {ing.peso}</li>)
+                                        return (<li key={ingi}>{ing}</li>)
                                     })}
                                 </ul>
                             </div>

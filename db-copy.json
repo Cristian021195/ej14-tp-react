@@ -1,6 +1,7 @@
 {
     "recetas":[
         {
+            "id":1,
             "nombre":"Pascualina Clasica",
             "autor":"Marcelo Gutierrez",
             "descripcion":"La receta aplica para hacer hasta 2 pascualinas grandes o 3 pequeñas / medianas",
@@ -34,135 +35,89 @@
             ]
         },
         {
-            "nombre":"Pastel Papas",
-            "autor":"Cristian Gutierrez",
-            "descripcion":"La receta aplica para hacer un pastel de papas mediano",
-            "insumos":[
-                {
-                    "producto":"harina",
-                    "peso":"250 gramos"
-                },
-                {
-                    "producto":"Sal Fina",
-                    "peso":"2 Cucharaditas"
-                },
-                {
-                    "producto":"Aceite",
-                    "peso":"1/4 de taza"
-                },
-                {
-                    "producto":"Agua tibia",
-                    "peso":"1/8 a 1/4 de taza"
-                },
-                {
-                    "producto":"Huevos",
-                    "peso":"4 huevos"
-                },
-                {
-                    "producto":"Papas",
-                    "peso":"1/2 kilo de papas"
-                },
-                {
-                    "producto":"Carne molida",
-                    "peso":"300g"
-                }
-                ,
-                {
-                    "producto":"Cebolla y Pimiento",
-                    "peso":"1 mediano"
-                }
+            "id": 2,
+            "nombre": "Pastel Papas",
+            "autor": "Cristian Gutierrez",
+            "descripcion": "La receta aplica para hacer un pastel de papas mediano",
+            "insumos": [
+              {
+                "producto": "harina",
+                "peso": "250 gramos"
+              },
+              {
+                "producto": "Sal Fina",
+                "peso": "2 Cucharaditas"
+              },
+              {
+                "producto": "Aceite",
+                "peso": "1/4 de taza"
+              },
+              {
+                "producto": "Agua tibia",
+                "peso": "1/8 a 1/4 de taza"
+              },
+              {
+                "producto": "Huevos",
+                "peso": "4 huevos"
+              },
+              {
+                "producto": "Papas",
+                "peso": "1/2 kilo de papas"
+              },
+              {
+                "producto": "Carne molida",
+                "peso": "300g"
+              },
+              {
+                "producto": "Cebolla y Pimiento",
+                "peso": "1 mediano"
+              }
             ],
-            "preparacion":[
-                "Se hierve la papa y se hace pure mezclandolo con el huevo, harina sal y aceite",
-                "Se pone la cebolla, pimiento, sal y condimientos a freir con aceite",
-                "Se arma la base paredes del pastel en recipiente",
-                "Se agrega el relleno y va al horno 40 minutos"
+            "preparacion": [
+              "Se hierve la papa y se hace pure mezclandolo con el huevo, harina sal y aceite",
+              "Se pone la cebolla, pimiento, sal y condimientos a freir con aceite",
+              "Se arma la base paredes del pastel en recipiente",
+              "Se agrega el relleno y va al horno 40 minutos"
             ]
-        },
-        {
-            "nombre":"Pastel Papas",
-            "autor":"Cristian Gutierrez",
-            "descripcion":"La receta aplica para hacer un pastel de papas mediano",
-            "insumos":[
-                {
-                    "producto":"harina",
-                    "peso":"250 gramos"
-                },
-                {
-                    "producto":"Sal Fina",
-                    "peso":"2 Cucharaditas"
-                },
-                {
-                    "producto":"Aceite",
-                    "peso":"1/4 de taza"
-                },
-                {
-                    "producto":"Agua tibia",
-                    "peso":"1/8 a 1/4 de taza"
-                },
-                {
-                    "producto":"Huevos",
-                    "peso":"4 huevos"
-                },
-                {
-                    "producto":"Papas",
-                    "peso":"1/2 kilo de papas"
-                },
-                {
-                    "producto":"Carne molida",
-                    "peso":"300g"
-                }
-                ,
-                {
-                    "producto":"Cebolla y Pimiento",
-                    "peso":"1 mediano"
-                }
+          },
+          {
+            "id": 3,
+            "nombre": "Zapallito Relleno",
+            "autor": "Cristian Smith",
+            "descripcion": "La receta se hace con zapallitos verdes de cualquier tamaño",
+            "insumos": [
+              {
+                "producto": "zapallitos verdes",
+                "peso": "4 o más segun cantidad"
+              },
+              {
+                "producto": "Sal Fina",
+                "peso": "2 Cucharaditas"
+              },
+              {
+                "producto": "Aceite",
+                "peso": "1/4 de taza"
+              },
+              {
+                "producto": "Arroz",
+                "peso": "1/4 de taza por unidad"
+              },
+              {
+                "producto": "Carne molida",
+                "peso": "300g"
+              },
+              {
+                "producto": "Cebolla y Pimiento",
+                "peso": "1 mediano"
+              }
             ],
-            "preparacion":[
-                "Se hierve la papa y se hace pure mezclandolo con el huevo, harina sal y aceite",
-                "Se pone la cebolla, pimiento, sal y condimientos a freir con aceite",
-                "Se arma la base paredes del pastel en recipiente",
-                "Se agrega el relleno y va al horno 40 minutos"
+            "preparacion": [
+              "Con una cuchara se saca el relleno del zapallito verde",
+              "En una sarten se prepara la carne con las verduras",
+              "Se lava el arroz en otro recipiente",
+              "Se mezcla el relleno con la carne y se pone dentro del zapallito",
+              "Se hierve por 20/30 minutos"
             ]
-        },
-        {
-            "nombre":"Zapallito Relleno",
-            "autor":"Cristian Smith",
-            "descripcion":"La receta se hace con zapallitos verdes de cualquier tamaño",
-            "insumos":[
-                {
-                    "producto":"zapallitos verdes",
-                    "peso":"4 o más segun cantidad"
-                },
-                {
-                    "producto":"Sal Fina",
-                    "peso":"2 Cucharaditas"
-                },
-                {
-                    "producto":"Aceite",
-                    "peso":"1/4 de taza"
-                },
-                {
-                    "producto":"Arroz",
-                    "peso":"1/4 de taza por unidad"
-                },
-                {
-                    "producto":"Carne molida",
-                    "peso":"300g"
-                }
-                ,
-                {
-                    "producto":"Cebolla y Pimiento",
-                    "peso":"1 mediano"
-                }
-            ],
-            "preparacion":[
-                "Con una cuchara se saca el relleno del zapallito verde",
-                "En una sarten se prepara la carne con las verduras",
-                "Se lava el arroz en otro recipiente",
-                "Se mezcla el relleno con la carne y se pone dentro del zapallito",
-                "Se hierve por 20/30 minutos"
-            ]
-        }
+          }
     ]
 }
