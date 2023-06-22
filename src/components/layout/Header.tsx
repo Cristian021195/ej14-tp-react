@@ -6,7 +6,7 @@ export function Header(){
             <ul>
                 <li>
                     <NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""  }>
-                        Messages
+                        Home
                     </NavLink>
                 </li>
                 <li>
@@ -14,12 +14,15 @@ export function Header(){
                         Panel
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/login" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""  }>
-                        Login
-                    </NavLink>
-                </li>
             </ul>
         </header>
     )
 }
+/*
+<li>
+                    <NavLink to="/login" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""  }>
+                        Login
+                    </NavLink>
+                </li>
+
+*/

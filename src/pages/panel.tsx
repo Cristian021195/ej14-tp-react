@@ -5,9 +5,14 @@ export function Panel(){
     const {recetas, setRecetas, error, setError, eliminar} = useRecetas();
     return (
         <main>
-            <section>
+            <section className="pop-up">
                 <h1>Panel</h1>
+                
                 <div style={{display:'flex', justifyContent:'center'}}>
+                    <div>
+                    <Link to={'/panel/crear'} style={{margin:'0.5rem', borderRadius:'0.3rem', padding:'0.4rem', textDecoration:'none', color:'whitesmoke', fontWeight:'bold', backgroundColor:'coral'}}
+                    >+ CREAR</Link>
+                    </div>
                 <table style={{marginTop:'1em'}}>
                     <thead>
                         <tr>
@@ -21,7 +26,12 @@ export function Panel(){
                                 <tr key={ri}>
                                     <td>{r.id}</td><td>{r.nombre}</td>
                                     <td>
-                                        <button onClick={()=>{ eliminar(r.id)}}>🗑️</button>
+                                        <button onClick={()=>{
+                                            const ver = window.confirm("¿Eliminar?");
+                                            if(ver){
+                                                eliminar(r.id);
+                                            }                                                
+                                            }}>🗑️</button>
                                         <Link to={'/editar/'+r.id}>✏️</Link>
                                     </td>
                                 </tr>

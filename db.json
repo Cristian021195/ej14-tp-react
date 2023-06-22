@@ -61,6 +61,28 @@
         "Se mezcla el relleno con la carne y se pone dentro del zapallito",
         "Se hierve por 20/30 minutos"
       ]
+    },
+    {
+      "nombre": "Mollejas Locas",
+      "autor": "Luquita Rodriguez",
+      "descripcion": "Parte de asado, mollejas nuevas, prueba de POST",
+      "insumos": [
+        "Cebolla,",
+        "Pimiento,",
+        "Sal,",
+        "Aceite,",
+        "Salsa Barbacoa,",
+        "Carne,"
+      ],
+      "preparacion": [
+        "Se pica la cebolla y el pimiento mezclando con aceite,",
+        "Se Mezcla con la salsa barbacoa,",
+        "Se pone sal a la carne,",
+        "Se va a la parilla,",
+        "A medida que cocina vamos poniendo salsa en ambos lados,",
+        ""
+      ],
+      "id": 4
     }
   ]
 }
