@@ -19,6 +19,7 @@ export function Crear(){
             if(res.status === 404){
                 throw new Error('Error de peticion, verifique url');
             }
+            window.alert('Creada nueva receta!');
             return true;
         } catch (err:any) {
             console.log(err.toString())
