@@ -1,45 +1,39 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect } from 'react';
-import { useRecetas } from "../hooks";
-export function Editar(){
-    const {id} = useParams();
-    //const {editar} = useRecetas();
+import { useState } from 'react';
+export function Crear(){
+
     const [receta, setReceta] = useState<any>({
-        id,
+        nombre:'',
         autor:'',
         descripcion:'',
+        insumos:'',
         preparacion:'',
     });
-    useEffect(()=>{
-        fetch(import.meta.env.VITE_JSON_URL+'recetas/'+id)
-        .then(res=>{
-            if(res.status === 404){
-                throw new Error("Sin datos / No encontrado por id");
-            }
-            return res.json();
-        })
-        .then(res=>{setReceta(res)})
-        .catch(err=>console.log(err))
-    },[])
-    async function handleSubmit(e:any){
 
+    async function handleSubmit(e:any){
         e.preventDefault();
 
         try {
-            const res = await fetch(import.meta.env.VITE_JSON_URL+'recetas/'+id, {method:'PUT', body: JSON.stringify(receta),
+            const res = await fetch(import.meta.env.VITE_JSON_URL+'recetas/', {method:'POST', body: JSON.stringify(receta),
             headers: { 'Content-Type': 'application/json' }
         });
             if(res.status === 404){
                 throw new Error('Error de peticion, verifique url');
             }
+            window.alert('Creada nueva receta!');
             return true;
         } catch (err:any) {
             console.log(err.toString())
         }
     }
+
     return (
-        <div className="form-editar pop-up">
-            <form onSubmit={handleSubmit}>
+        <>
+            <div style={{textAlign:'center', marginTop:'2rem'}}>
+                <h1>Nueva Receta</h1>
+            </div>                
+            <div className="form-editar pop-up">
+            <article>
+                <form onSubmit={handleSubmit}>
                     <label htmlFor="nombre">Nombre:  </label>
                     <input type="text" placeholder="nombre" name="nombre" defaultValue={receta.nombre} required 
                     onChange={(e:any)=>{
@@ -76,7 +70,9 @@ export function Editar(){
                     }>
                     </textarea>
                     <div style={{textAlign:'center', width:'100%'}}><button type="submit">Guardar</button></div>
-            </form>
+                </form>
+            </article>
         </div>
+        </>        
     )
 }
